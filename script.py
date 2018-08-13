@@ -47,7 +47,7 @@ async def haida():
         image_url = post['file_url']
         embed = discord.Embed(title="Haida!", color=0xeee657)
         embed.set_image(url=image_url)
-        embed.set_footer(text=f'Score: {post["score"]} | Size: {post["width"]}x{post["height"]} | Link: [Click Here](https://e621.net/post/show/{post["id"]})')
+        embed.set_footer(text=f'Score: {post["score"]} | Size: {post["width"]}x{post["height"]} | Link: https://e621.net/post/show/{post["id"]}')
     await bot.say(embed=embed)
 
 @bot.command(pass_context=True)
@@ -64,7 +64,7 @@ async def lewd(ctx):
                 image_url = post['file_url']
                 embed = discord.Embed(title="OwO", color=0xeee657)
                 embed.set_image(url=image_url)
-                embed.set_footer(text=f'Score: {post["score"]} | Size: {post["width"]}x{post["height"]} | Link: [Click Here](https://e621.net/post/show/{post["id"]})')
+                embed.set_footer(text=f'Score: {post["score"]} | Size: {post["width"]}x{post["height"]} | Link: https://e621.net/post/show/{post["id"]}')
             await bot.say(embed=embed)
     else:
         embed = discord.Embed(description="Sorry, this command only works in NSFW channels.", color=0xeee657)
