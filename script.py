@@ -90,11 +90,11 @@ async def pasta():
 async def info():
     embed = discord.Embed(title="HaidaBot", description="The best bot.", color=0xeee657)
 
-    embed.add_field(name="Author", value="BottomOfTheBaarle#9679 a.k.a. tooly     ")
+    embed.add_field(name="Author", value="BottomOfTheBaarle#9679 a.k.a. this nigga eating yeens")
 
     embed.add_field(name="Bot Prefix", value="h.")
 
-    embed.add_field(name="Version", value="1.0.0")
+    embed.add_field(name="Version", value="1.0.2")
 
     await bot.say(embed=embed)
 
